@@ -1,12 +1,11 @@
 // main page elements
 body
 	font-size: 14px
-	// color: $dark
-	// font-family: '', sans-serif
-	font-weight: 400
+	color: $black
+	font-family: 'Gilroy'
+	font-style: normal
 	background: white
 	overflow-x: hidden
-	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
 
 .page-container
 	max-width: 1920px
@@ -15,7 +14,7 @@ body
 	overflow: hidden
 
 .container
-	max-width: 1170px
+	max-width: 1570px
 	width: 100%
 	padding: 0
 	margin: 0 auto
@@ -24,3 +23,49 @@ body
 		max-width: 100%
 	+mq($max-width: 575px)
 		padding: 0 10px
+.flex
+	display: flex
+.crumbs
+	margin-top: 56px
+	.flex
+		align-items: center
+	a
+		color: $black
+		font-weight: normal
+		font-size: 15px
+		line-height: 17px
+	.crumbs__cirle
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background: $black
+		margin-left: 9px
+		margin-right: 9px
+.main-hr
+	margin-top: 31px
+	margin-bottom: 34px
+	border: 1px solid #A1B2DC
+.main-title
+	font-weight: 600
+	font-size: 18px
+	line-height: 21px
+	color: $purple
+.main-button
+	display: flex
+	justify-content: center
+	align-items: center
+	background: linear-gradient(88.87deg, #FFFFFF 2.89%, #FFFFFF 95.11%)
+	box-shadow: 0px 4px 25px #BEDBEB
+	border-radius: 43px
+	height: 45px
+	color: $blue
+.dop-button
+	display: flex
+	justify-content: center
+	align-items: center
+	background: linear-gradient(88.87deg, #565E93 2.89%, #619CF5 95.11%)
+	border-radius: 5px
+	height: 60px
+	color: white
+	svg
+		margin-left: 30px
