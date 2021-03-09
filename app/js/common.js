@@ -27,6 +27,13 @@
 						slidesToShow: 3,
 						slidesToScroll: 1,
 				  	}
+				},
+				{
+					breakpoint: 767,
+					settings:{
+						slidesToShow: 1,
+						slidesToScroll: 1,
+				  	}
 				}
 			]
 		});
@@ -39,5 +46,13 @@
 				type: 'inline'
 			});
 		});
+		window.onload = init;
+		function init(){
+			var button = document.getElementById("coco")
+			button.onclick = handleButtonClick;
+		}
+		function handleButtonClick() {
+			document.getElementsByClassName('coco')[0].style.display = 'none';
+		}
 	});
 })(jQuery);

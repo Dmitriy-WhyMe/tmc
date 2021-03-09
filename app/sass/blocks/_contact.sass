@@ -70,13 +70,22 @@
             border-radius: 5px
 .text__1
     margin-right: 11px
+    padding-left: 24px
+    color: $blue
+.tel
+    padding-left: 24px
+    color: $blue
 .text__2
+    resize: none
     border: 3px solid #A1B2DC
     box-sizing: border-box
     border-radius: 5px
     width: 503px
     height: 116px
     margin-bottom: 33px
+    padding-left: 24px
+    padding-top: 12px
+    color: $blue
 .white-popup__btn
     display: flex
     justify-content: center
@@ -97,3 +106,14 @@
     text-align: center
     span
         text-decoration: underline
+@include max-screen(767px)
+    .maps__pop
+        padding-left: 20px
+        padding-right: 20px
+        span
+            input
+                max-width: 180px
+                width: 100%
+        .text__2
+            max-width: 370px
+            width: 100%

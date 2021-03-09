@@ -10,7 +10,7 @@ html
 			.container
 				.crumbs
 					.flex
-						a(href="#") Главная
+						a(href="/pages") Главная
 						.crumbs__cirle
 						a(href="#") Контакты
 				.maps
@@ -23,9 +23,9 @@ html
 									.white-popup__title Обратная связь
 									.white-popup__subtitle Введите Ваши данные и мы Вам перезвоним
 									span.flex
-										input.text__1(type="text")
-										input.tel(type="tel")
-									input.text__2(type="text")
+										input.text__1(type="text" value="Ваше имя")
+										input.tel(type="tel" value="Телефон")
+									textarea.text__2(name="", cols="30", rows="10") Сообщение
 									a.white-popup__btn Отправить
 									.white-popup__text *Нажимая на кнопку, вы даете согласие на обработку своих<br><span>персональных данных</span>
 							.maps__contact-title Контакты

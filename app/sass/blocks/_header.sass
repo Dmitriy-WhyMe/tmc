@@ -1,3 +1,27 @@
+.coco
+    min-height: 118px
+    background: linear-gradient(103.29deg, #FFFFFF 2.3%, rgba(255, 255, 255, 0.65) 94.12%)
+    backdrop-filter: blur(33px)
+    position: fixed
+    bottom: 0
+    padding-left: 200px
+    padding-right: 200px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 3
+    .coco__text
+        margin-right: 217px
+    .coco__btn
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        background: linear-gradient(88.87deg, #565E93 2.89%, #619CF5 95.11%)
+        color: white
+        min-width: 217px
+        height: 60px
+        border-radius: 5px
 .header
     display: flex
     margin-left: 81px
@@ -68,6 +92,19 @@
             font-size: 16px !important
             line-height: 19px !important
             color: $purple
+@include max-screen(1024px)
+    .coco
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 10px
+        padding-bottom: 10px
+        .coco__text
+            margin-right: 20px
+@include max-screen(767px)
+    .coco
+        flex-direction: column
+        .coco__text
+            margin-bottom: 10px
 @include max-screen(1024px)
     .main-menu-btn
         display: block

@@ -57,3 +57,79 @@
                 font-weight: 600
                 text-decoration-line: underline
                 color: $black
+@include max-screen(834px)
+    .fotter-menu-btn
+        display: block
+    .fotter-menu-btn-icon,
+    .fotter-menu-btn-icon:before,
+    .fotter-menu-btn-icon:after
+        display: block
+        position: absolute
+        top: 50%
+        left: 2px
+        height: 2px
+        width: 24px
+        background: $black
+        -webkit-transition: all 0.25s
+        transition: all 0.25s
+    .fotter-menu-btn-icon:before
+        content: ''
+        top: -7px
+        left: 0
+    .fotter-menu-btn-icon:after
+        content: ''
+        top: 7px
+        left: 0
+    #fotter-menu-state:not(:checked) ~ #fotter-menu
+        display: none
+    #fotter-menu-state:checked ~ #fotter-menu
+        flex-direction: column
+        display: flex
+        width: 100%
+        max-width: 200px
+        background: black
+        position: fixed
+        right: 0
+        top: 0
+        z-index: 99999
+        margin: 0
+        height: 100vh
+        transition: all .3s ease
+    #fotter-menu-state:checked ~ #fotter-menu li a
+        color: white
+    #fotter-menu-state:checked ~ .fotter-menu-btn .fotter-menu-btn-icon
+        height: 0
+        background: white
+    #fotter-menu-state:checked ~ .fotter-menu-btn .fotter-menu-btn-icon:before
+        transform: rotate(-45deg)
+        top: 0
+    #fotter-menu-state:checked ~ .fotter-menu-btn .fotter-menu-btn-icon:after 
+        top: 0
+        transform: rotate(45deg)
+    .fotter-menu-btn 
+        float: right
+        margin: 6px 10px
+        position: relative
+        display: inline-block
+        width: 29px
+        height: 29px
+        text-indent: 29px
+        white-space: nowrap
+        overflow: hidden
+        cursor: pointer
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    #fotter-menu
+        justify-content: start
+        padding-left: 20px
+        padding-top: 40px
+    .fotter__menu
+        margin-left: 0px
+        width: 60%
+    #fotter-menu 
+        li
+            margin-right: 0px
+            a
+                margin-bottom: 10px
+@include max-screen(768px)
+    .fotter__menu
+        width: 55%
