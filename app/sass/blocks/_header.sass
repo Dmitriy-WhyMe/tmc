@@ -68,6 +68,71 @@
             font-size: 16px !important
             line-height: 19px !important
             color: $purple
+@include max-screen(1024px)
+    .main-menu-btn
+        display: block
+    .main-menu-btn-icon,
+    .main-menu-btn-icon:before,
+    .main-menu-btn-icon:after
+        display: block
+        position: absolute
+        top: 50%
+        left: 2px
+        height: 2px
+        width: 24px
+        background: $black
+        -webkit-transition: all 0.25s
+        transition: all 0.25s
+    .main-menu-btn-icon:before
+        content: ''
+        top: -7px
+        left: 0
+    .main-menu-btn-icon:after
+        content: ''
+        top: 7px
+        left: 0
+    #main-menu-state:not(:checked) ~ #main-menu
+        display: none
+    #main-menu-state:checked ~ #main-menu
+        flex-direction: column
+        display: flex
+        width: 100%
+        max-width: 200px
+        background: black
+        position: fixed
+        right: 0
+        top: 0
+        z-index: 99999
+        margin: 0
+        height: 100vh
+        transition: all .3s ease
+    #main-menu-state:checked ~ #main-menu li a
+        color: white
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon
+        height: 0
+        background: white
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before
+        transform: rotate(-45deg)
+        top: 0
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after 
+        top: 0
+        transform: rotate(45deg)
+    .main-menu-btn 
+        float: right
+        margin: 6px 10px
+        position: relative
+        display: inline-block
+        width: 29px
+        height: 29px
+        text-indent: 29px
+        white-space: nowrap
+        overflow: hidden
+        cursor: pointer
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    #main-menu
+        justify-content: start
+        padding-left: 20px
+        padding-top: 40px
 @include min-screen(768px)
     .sm-clean 
         a
