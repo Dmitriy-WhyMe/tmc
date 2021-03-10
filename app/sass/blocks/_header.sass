@@ -26,7 +26,7 @@
     display: flex
     margin-left: 81px
     margin-right: 72px
-    margin-top: 29px
+    padding-top: 29px
     justify-content: space-between
     align-items: center
 .header__text
@@ -92,6 +92,15 @@
             font-size: 16px !important
             line-height: 19px !important
             color: $purple
+.active:after
+    content: ''
+    margin-top: 9px
+    display: block
+    height: 6px
+    width: 35px
+    margin: 9px auto 0px auto
+    background: #5B21BA
+    border-radius: 12px
 @include max-screen(1024px)
     .coco
         padding-left: 20px

@@ -1,3 +1,7 @@
+#map-canvas
+    width: 1032px
+    height: 693px
+
 .maps
     margin-top: 109px
 .maps__img
@@ -52,3 +56,7 @@
         font-weight: 600
         font-size: 16px
         line-height: 200%
+@include max-screen(1024px)
+    #map-canvas
+        max-width: 1032px
+        width: 100%

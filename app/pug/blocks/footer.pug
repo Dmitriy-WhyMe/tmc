@@ -2,7 +2,7 @@
     .container
         .flex
             .fotter__logo
-                a(href="/pages")
+                a(href="/pages/index.html")
                     img(src="../img/logo_fotter.png")
             .fotter__menu
                 nav(class="fotter-nav fotter-nav-dop" role="navigation")
@@ -26,7 +26,17 @@
                 a(href="tel:+7­4959265808")
                     img(src="../img/phone.svg")
                     .header__call-phone +7­(495) 926­-58-08
-                a.fotter__call-text(href="tel:+7­4959265808") Обратный звонок
+                a.fotter__call-text(href="#contact-popup_2" id="pop_2") Обратный звонок
+                .white-popup(class="mfp-hide" id="contact-popup_2")
+                    .maps__pop
+                        .white-popup__title Обратная связь
+                        .white-popup__subtitle Введите Ваши данные и мы Вам перезвоним
+                        span.flex
+                            input.text__1(type="text" value="Ваше имя")
+                            input.tel(type="tel" value="Телефон")
+                        textarea.text__2(name="", cols="30", rows="10") Сообщение
+                        a.white-popup__btn Отправить
+                        .white-popup__text *Нажимая на кнопку, вы даете согласие на обработку своих<br><span>персональных данных</span>
         .flex-dop
             span © ТМ-Сервис 2012 - 2021. Все права защищены.
             a.fotter__politics(href="#") Политика конфиденциальности

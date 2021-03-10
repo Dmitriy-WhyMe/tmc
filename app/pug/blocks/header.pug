@@ -1,5 +1,5 @@
 .header
-    a.header__logo(href="/pages")
+    a.header__logo(href="/pages/index.html")
         img(src="../img/logo.png")
     .header__text Квалифицированная сервисная поддержка банковского оборудования
     .header__menu
@@ -9,7 +9,7 @@
                 span.main-menu-btn-icon Toggle main menu visibility
             ul(id="main-menu" class="sm sm-clean")
                 li
-                    a(href="/pages") Главная
+                    a(href="/pages/index.html") Главная
                 li
                     a(href="/pages/company.html") О компании
                 li
@@ -30,7 +30,17 @@
         a(href="tel:+7­4959265808")
             img(src="../img/phone.svg")
             .header__call-phone +7­(495) 926­-58-08
-        a.header__call-text(href="tel:+7­4959265808") Обратный звонок
+        a.header__call-text(href="#contact-popup_1" id="pop_1") Обратный звонок
+        .white-popup(class="mfp-hide" id="contact-popup_1")
+            .maps__pop
+                .white-popup__title Обратная связь
+                .white-popup__subtitle Введите Ваши данные и мы Вам перезвоним
+                span.flex
+                    input.text__1(type="text" value="Ваше имя")
+                    input.tel(type="tel" value="Телефон")
+                textarea.text__2(name="", cols="30", rows="10") Сообщение
+                a.white-popup__btn Отправить
+                .white-popup__text *Нажимая на кнопку, вы даете согласие на обработку своих<br><span>персональных данных</span>
 .coco
     .coco__text Файлы cookie используются на нашем веб-сайте и в мобильном приложении. Для получения дополнительной информации о файлах cookie, пожалуйста, просмотрите ознакомительный текст о файлах cookie. Если вы даете свое согласие на использование файлов cookie прииспользовании нашего веб-сайта и мобильного приложения, социальныхсетей, персонализации контента и рекламы, нажмите на кнопку
     a.coco__btn(id="coco") Я согласен
