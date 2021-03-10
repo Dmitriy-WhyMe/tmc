@@ -95,9 +95,10 @@
 				center: centerCoord,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-		
 			map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
+			$.getJSON("../json/map-style/map-style.json", function(data) {
+				map.setOptions({styles: data});
+			});
 			$.getJSON("../js/markers.json", {}, function (data) {
 				$.each(data.places, function (i, item) {
 		
