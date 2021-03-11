@@ -19,8 +19,8 @@ var path = {
 		css: './app/css/',
 		gulpfile: './gulpfile.js',
 		js: './app/js/',
-		jsLibs: ['./app/libs/smartmenus/jquery.smartmenus.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.js', './app/libs/inputmask/dist/jquery.inputmask.bundle.js', './app/libs/jquery-nice-select-master/js/jquery.js', './app/libs/jquery-nice-select-master/js/jquery.nice-select.js'],
-		cssLibs: ['./app/libs/smartmenus/css/sm-core-css.css', './app/libs/smartmenus/css/sm-clean/sm-clean.css', './app/libs/slick-carousel/slick/slick.css', './app/libs/Magnific-Popup-master/dist/magnific-popup.css', './app/libs/inputmask/css/inputmask.css', './app/libs/jquery-nice-select-master/css/nice-select.css'],
+		jsLibs: ['./app/libs/smartmenus/jquery.smartmenus.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.js', './app/libs/inputmask/dist/jquery.inputmask.bundle.js', './app/libs/jquery-nice-select-master/js/jquery.nice-select.js'],
+		cssLibs: ['./app/libs/smartmenus/css/sm-core-css.css', './app/libs/smartmenus/css/sm-clean/sm-clean.css', './app/libs/slick-carousel/slick/slick.css', './app/libs/inputmask/css/inputmask.css', './app/libs/Magnific-Popup-master/dist/magnific-popup.css', './app/libs/jquery-nice-select-master/css/nice-select.css'],
 		deleteLibs: ['./app/js/libs.js', './app/css/libs.css']
 	}
 }
