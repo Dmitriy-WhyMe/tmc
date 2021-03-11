@@ -8,9 +8,16 @@
 			nextArrow: $('.arrow_prev'),
 			responsive: [
 				{
-					breakpoint: 1441,
+					breakpoint: 1601,
 					settings:{
 						slidesToShow: 5,
+						slidesToScroll: 1,
+				  	}
+				},
+				{
+					breakpoint: 1441,
+					settings:{
+						slidesToShow: 4,
 						slidesToScroll: 1,
 				  	}
 				},
