@@ -93,7 +93,7 @@
 			var mapOptions = {
 				zoom: 7,
 				center: centerCoord,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
 			};
 			map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 			$.getJSON("../json/map-style/map-style.json", function(data) {
