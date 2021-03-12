@@ -1,0 +1,280 @@
+.coco
+    min-height: 118px
+    background: linear-gradient(103.29deg, #FFFFFF 2.3%, rgba(255, 255, 255, 0.65) 94.12%)
+    backdrop-filter: blur(33px)
+    position: fixed
+    bottom: 0
+    padding-left: 200px
+    padding-right: 200px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 3
+    .coco__text
+        margin-right: 217px
+    .coco__btn
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        background: linear-gradient(88.87deg, #565E93 2.89%, #619CF5 95.11%)
+        color: white
+        min-width: 217px
+        height: 60px
+        border-radius: 5px
+.header
+    display: flex
+    margin-left: 81px
+    margin-right: 72px
+    padding-top: 29px
+    justify-content: space-between
+    align-items: center
+.header__text
+    max-width: 249px
+    font-size: 13px
+    line-height: 198%
+.header__menu
+    margin-left: 86px
+    margin-right: 93px
+.header__call
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    a
+        display: flex
+        align-items: center
+        font-weight: 600
+        font-size: 18px
+        line-height: 21px
+        color: $black
+        img
+            margin-right: 10px
+    .header__call-text
+        font-weight: 600
+        font-size: 16px
+        line-height: 19px
+        margin-top: 15px
+        color: $blue
+        border-bottom: 2px solid #A1B2DC
+.main-menu-btn
+    display: none
+#main-menu-state
+    display: none
+.sm-clean
+    padding: 0
+    background: none
+    border-radius: 0px
+    a
+        font-family: 'Gilroy'
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 19px
+        color: $black
+        &:hover
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 16px !important
+            line-height: 19px !important
+            color: $purple
+        &:focus
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 16px !important
+            line-height: 19px !important
+            color: $purple
+        &:active
+            font-family: 'Gilroy'
+            font-style: normal
+            font-weight: 600
+            font-size: 16px !important
+            line-height: 19px !important
+            color: $purple
+.active:after
+    content: ''
+    margin-top: 9px
+    display: block
+    height: 6px
+    width: 35px
+    margin: 9px auto 0px auto
+    background: #5B21BA
+    border-radius: 12px
+@include max-screen(1440px)
+    .sm-clean 
+        li 
+            a:active
+                padding-right: 10px !important
+                font-size: 12px !important
+    .sm-clean 
+        li 
+            a:hover
+                padding-right: 10px !important
+                font-size: 12px !important
+    .sm-clean 
+        li 
+            a:focus
+                padding-right: 10px !important
+                font-size: 12px !important
+@include max-screen(1400px)
+    .sm-clean 
+        li 
+            a:active
+                padding-right: 10px !important
+                font-size: 14px !important
+    .sm-clean 
+        li 
+            a:hover
+                padding-right: 10px !important
+                font-size: 14px !important
+    .sm-clean 
+        li 
+            a:focus
+                padding-right: 10px !important
+                font-size: 14px !important
+@include max-screen(1366px)
+    .sm-clean 
+        li 
+            a:active
+                padding-right: 10px !important
+                font-size: 12px !important
+    .sm-clean 
+        li 
+            a:hover
+                padding-right: 10px !important
+                font-size: 12px !important
+    .sm-clean 
+        li 
+            a:focus
+                padding-right: 10px !important
+                font-size: 12px !important
+@include max-screen(1280px)
+    .sm-clean 
+        li 
+            a:active
+                padding-right: 10px !important
+                font-size: 11px !important
+    .sm-clean 
+        li 
+            a:hover
+                padding-right: 10px !important
+                font-size: 11px !important
+    .sm-clean 
+        li 
+            a:focus
+                padding-right: 10px !important
+                font-size: 11px !important
+@include max-screen(1024px)
+    .sm-clean a, .sm-clean a:active, .sm-clean a:focus, .sm-clean a:hover
+        padding: 0px
+    .main-nav .sm-clean a
+        padding-right: 0px
+    .sm-clean 
+        li 
+            a:active
+                padding-left: 10px !important
+                padding-right: 10px !important
+                font-size: 16px !important
+    .sm-clean 
+        li 
+            a:hover
+                padding-left: 10px !important
+                padding-right: 10px !important
+                font-size: 16px !important
+    .sm-clean 
+        li 
+            a:focus
+                padding-left: 10px !important
+                padding-right: 10px !important
+                font-size: 16px !important
+    .coco
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 10px
+        padding-bottom: 10px
+        .coco__text
+            margin-right: 20px
+@include max-screen(767px)
+    .coco
+        flex-direction: column
+        .coco__text
+            margin-bottom: 10px
+@include max-screen(1024px)
+    .main-menu-btn
+        display: block
+    .main-menu-btn-icon,
+    .main-menu-btn-icon:before,
+    .main-menu-btn-icon:after
+        display: block
+        position: absolute
+        top: 50%
+        left: 2px
+        height: 2px
+        width: 24px
+        background: $black
+        -webkit-transition: all 0.25s
+        transition: all 0.25s
+    .main-menu-btn-icon:before
+        content: ''
+        top: -7px
+        left: 0
+    .main-menu-btn-icon:after
+        content: ''
+        top: 7px
+        left: 0
+    #main-menu-state:not(:checked) ~ #main-menu
+        display: none
+    #main-menu-state:checked ~ #main-menu
+        flex-direction: column
+        display: flex
+        width: 100%
+        max-width: 200px
+        background: black
+        position: fixed
+        right: 0
+        top: 0
+        z-index: 99999
+        margin: 0
+        height: 100vh
+        transition: all .3s ease
+    #main-menu-state:checked ~ #main-menu li a
+        color: white
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon
+        height: 0
+        background: white
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before
+        transform: rotate(-45deg)
+        top: 0
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after 
+        top: 0
+        transform: rotate(45deg)
+    .main-menu-btn 
+        float: right
+        margin: 6px 10px
+        position: relative
+        display: inline-block
+        width: 29px
+        height: 29px
+        text-indent: 29px
+        white-space: nowrap
+        overflow: hidden
+        cursor: pointer
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    #main-menu
+        justify-content: start
+        padding-top: 40px
+@include min-screen(768px)
+    .sm-clean 
+        a
+            padding: 0px
+            padding-right: 23px
+            &:hover
+                padding: 0px
+                padding-right: 23px
+            &:active
+                padding: 0px
+                padding-right: 23px
+            &:focus
+                padding: 0px
+                padding-right: 23px

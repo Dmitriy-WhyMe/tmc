@@ -1,0 +1,181 @@
+// main page elements
+body
+	font-size: 14px
+	color: $black
+	font-family: 'Gilroy'
+	font-style: normal
+	background: #E9F0F7
+	overflow-x: hidden
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 1570px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+.flex
+	display: flex
+.crumbs
+	margin-top: 56px
+	.flex
+		align-items: center
+	a
+		color: $black
+		font-weight: normal
+		font-size: 15px
+		line-height: 17px
+	.crumbs__cirle
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background: $black
+		margin-left: 9px
+		margin-right: 9px
+.main-hr
+	margin-top: 31px
+	margin-bottom: 34px
+	border: 1px solid #A1B2DC
+.main-title
+	font-weight: 600
+	font-size: 18px
+	line-height: 21px
+	color: $purple
+.main-button
+	display: flex
+	justify-content: center
+	align-items: center
+	background: linear-gradient(88.87deg, #FFFFFF 2.89%, #FFFFFF 95.11%)
+	box-shadow: 0px 4px 25px #BEDBEB
+	border-radius: 43px
+	height: 45px
+	color: $blue
+	font-weight: bold
+	&:hover
+		color: #5B21BA
+.main-button
+	svg
+		path:hover
+			fill: #5B21BA
+.dop-button
+	display: flex
+	justify-content: center
+	align-items: center
+	background: linear-gradient(88.87deg, #565E93 2.89%, #619CF5 95.11%)
+	border-radius: 5px
+	height: 60px
+	color: white
+	svg
+		margin-left: 30px
+.white-popup
+	position: relative
+	Z-index: 999999
+	padding-top: 50px
+	padding-bottom: 78px
+	display: flex
+	justify-content: center
+	background: #FFF
+	width: auto
+	max-width: 706px
+	width: 100%
+	height: 580px
+	margin: 0 auto
+	border-radius: 43px
+	background: linear-gradient(88.87deg, #FFFFFF 2.89%, #FFFFFF 95.11%)
+	box-shadow: 0px 4px 25px #BEDBEB
+.mfp-close
+	margin-right: 20px
+	margin-top: 15px
+.mfp-figure
+	.mfp-close
+		margin-right: 0px
+		margin-top: 0px
+.list::-webkit-scrollbar
+    width: 5px
+.list::-webkit-scrollbar-thumb
+    background: #5B21BA
+    cursor: pointer
+    height: 10px
+    border-radius: 9px
+.list::-webkit-scrollbar-track
+    background: #CCDAE9
+    border-radius: 9px
+.list::-webkit-scrollbar-thumb:hover 
+    background: #5B21BA
+.nice-select
+	width: 237px
+	height: 45px
+	background: linear-gradient(88.87deg, #FFFFFF 2.89%, #FFFFFF 95.11%)
+	box-shadow: 0px 4px 25px #BEDBEB
+	border-radius: 43px
+	margin-top: 6px
+	padding-left: 25px
+	border: none
+	.list
+		width: 237px
+		height: 208px
+		background: linear-gradient(88.87deg, #FFFFFF 2.89%, #FFFFFF 95.11%)
+		box-shadow: 0px 4px 25px #BEDBEB
+		border-radius: 10px
+		overflow-y: auto
+		li
+			font-weight: bold
+			font-size: 14px
+			line-height: 200%
+			color: #CFD9F3
+			padding-left: 25px
+			padding-top: 17px
+			&:hover
+				
+				text-decoration-line: underline
+				color: #5B21BA
+	.current
+		font-weight: bold
+		font-size: 15px
+		line-height: 200%
+		color: #A1B2DC
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover
+	background-color: white
+.services-bg
+	background: url(../img/Услуги.png)
+	background-repeat: no-repeat
+.index-bg
+	background: url(../img/главная.png)
+	background-repeat: no-repeat
+.client-bg
+	background: url(../img/клиентов.png)
+	background-repeat: no-repeat
+.vacancies-bg
+	background: url(../img/Вакансии.png)
+	background-repeat: no-repeat
+.company-bg
+	background: url(../img/компании.png)
+	background-repeat: no-repeat
+.branchhials-bg
+	background: url(../img/Филиалы.png)
+	background-repeat: no-repeat
+.contact-bg
+	background: url(../img/Контакты.png)
+	background-repeat: no-repeat
+.sertificate-bg
+	background: url(../img/сертификаты.png)
+	background-repeat: no-repeat
+@include max-screen(1024px)
+	.services-bg, .index-bg, .client-bg, .vacancies-bg, .company-bg, .company-bg, .branchhials-bg, .contact-bg, .sertificate-bg
+		background: none
+.mfp-wrap
+	z-index: 50001
+.mfp-bg
+	z-index: 50001
+.jsx-2748036615
+	display: none
+.eapps-widget-toolbar
+	display: none !important
+.eals-logo-showcase-component.jsx-2748036615
+	padding: 10px 0px !important
+.eapps-widget
+	margin-top: -3px
