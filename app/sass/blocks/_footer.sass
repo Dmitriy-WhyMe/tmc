@@ -37,13 +37,18 @@
         color: $blue
         border-bottom: 2px solid #A1B2DC
 .fotter__menu
-    margin-left: 60px
+    margin-left: 120px
 .fotter-menu-btn
     display: none
 #fotter-menu-state
     display: none
 #fotter-menu
     z-index: 2
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    max-height: 120px
+    width: 450px
     li
         margin-right: 60px
         a
@@ -93,8 +98,11 @@
         margin: 0
         height: 100vh
         transition: all .3s ease
+        flex-wrap: nowrap
+        max-height: 100%
     #fotter-menu-state:checked ~ #fotter-menu li a
         color: white
+        text-align: center
     #fotter-menu-state:checked ~ .fotter-menu-btn .fotter-menu-btn-icon
         height: 0
         background: white
@@ -118,7 +126,6 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
     #fotter-menu
         justify-content: start
-        padding-left: 20px
         padding-top: 40px
     .fotter__menu
         margin-left: 0px
@@ -131,3 +138,9 @@
 @include max-screen(768px)
     .fotter__menu
         width: 55%
+@include min-screen(768px)
+    .sm-clean a
+        padding-right: 0px
+@include min-screen(836px)
+    .sm-clean a
+        padding-right: 23px

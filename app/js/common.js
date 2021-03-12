@@ -65,6 +65,31 @@
 				type: 'inline'
 			});
 		});
+
+		//Popup-img
+		jQuery(document).ready(function(jQuery) {
+            jQuery('.trigger').magnificPopup({
+                type: 'image',  
+                callbacks: {
+                    resize: changeImgSize,
+                    imageLoadComplete:changeImgSize,
+                    change:changeImgSize
+                }
+            });
+        });
+        function changeImgSize(){
+            var img = this.content.find('img');
+            img.css('max-height', '100%');
+            img.css('width', 'auto');
+            img.css('max-width', 'auto');
+        }
+		//Scroll
+		$(".maps__adress-phone").on("click","a", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1500);
+		});
 		//Cookie
 		function getCookie() {
 			var cookies = document.cookie.match ( '(^|;) ?adultconfirmed=([^;]*)(;|$)' );

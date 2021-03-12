@@ -124,6 +124,8 @@
     .attention__right
         margin-left: 0px
 @include max-screen(1024px)
+    .attention__scroll
+        display: none
     .main-nav
         .sm-clean 
             a
@@ -161,6 +163,12 @@
                     max-width: 100%
     .maps__img
         margin-right: 0px
+    .contact-bg
+        .maps
+            .flex
+                flex-direction: column-reverse
+        .maps__contact
+            margin-bottom: 10px
     .maps
         .flex
             flex-direction: column
@@ -234,7 +242,23 @@
         .client__file
             max-width: 360px
 @include max-screen(767px)
-
+    .white-popup
+        max-height: 800px
+        height: 100%
+    .maps__pop
+        span
+            max-width: 370px
+            width: 100%
+            flex-direction: column
+            .text__1
+                margin-bottom: 10px
+            input
+                margin-right: 0px
+                max-width: 370px
+                width: 100%
+                
+    #map-canvas
+        max-height: 400px
     .header
         flex-direction: column
         justify-content: center
@@ -246,8 +270,6 @@
         .header__call 
             margin-top: 10px
             align-items: center
-            .header__call-text
-                margin-left: 20px
         .header__menu
             margin-right: 0px
             margin-left: 0px
@@ -270,8 +292,6 @@
             .fotter__call
                 margin-top: 10px
                 align-items: center
-                .fotter__call-text
-                    margin-left: 20px
         .flex-dop
             flex-direction: column
             justify-content: center
